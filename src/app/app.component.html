@@ -1,9 +1,0 @@
-<div [ngClass]="{ 'page': isLoggedIn$ | async}">
-  <app-sidebar *ngIf="isLoggedIn$ | async"></app-sidebar>
-  <app-header *ngIf="isLoggedIn$ | async"></app-header>
-  <app-alert></app-alert>
-  <router-outlet>
-  	<span *ngIf="showLoader" class="loading"></span>
-  </router-outlet>     
-  <app-footer *ngIf="isLoggedIn$ | async"></app-footer>
-</div>
